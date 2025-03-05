@@ -1,0 +1,74 @@
+[
+    {
+        "function_declaration": {
+            "name": "add",
+            "parameters": [
+                "a",
+                "b"
+            ],
+            "body": [
+                {
+                    "if": {
+                        "condition": {
+                            "type": "equal",
+                            "left": {
+                                "identifier": "a"
+                            },
+                            "right": {
+                                "identifier": "b"
+                            }
+                        },
+                        "then": [
+                            {
+                                "return": {
+                                    "variable": "a"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "return": {
+                        "binary_operation": {
+                            "operator": "addition",
+                            "left": {
+                                "variable": "a"
+                            },
+                            "right": {
+                                "variable": "b"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "variable_assign": {
+            "name": "z",
+            "value": {
+                "function_call": {
+                    "name": "add",
+                    "parameters": [
+                        {
+                            "integer": 12
+                        },
+                        {
+                            "integer": 14
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "function_call": {
+            "name": "print",
+            "parameters": [
+                {
+                    "variable": "z"
+                }
+            ]
+        }
+    }
+]
