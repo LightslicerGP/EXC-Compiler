@@ -1,9 +1,6 @@
-# this is a test comment
-def add(a, b):
-    if a == b:
-        return a
-    return a + b
-
-
-z = add(12, 14)
-print(z)
+x = 15
+if x == 12:
+    # test comment1
+    print("hello world")
+else: # test comment2
+    print("goodbye world!")
